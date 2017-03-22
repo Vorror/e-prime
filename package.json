@@ -2,7 +2,7 @@
   "name": "e-prime",
   "version": "0.10.0",
   "description": "detect various forms of 'to be' inside of sentences",
-  "main": "eprime.js",
+  "main": "e-prime.js",
   "scripts": {
     "test": "istanbul cover _mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage ./test/*.js"
   },
@@ -20,6 +20,13 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Vorror/e-prime/issues"
+  },
+  "devDependencies": {
+    "chai": "^2.3.0",
+    "coveralls": "^2.11.2",
+    "istanbul": "^0.3.13",
+    "mocha": "^2.2.4",
+    "mocha-lcov-reporter": "0.0.2"
   },
   "homepage": "https://github.com/Vorror/e-prime#readme"
 }
