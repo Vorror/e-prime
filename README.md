@@ -4,7 +4,7 @@
 [![Downloads][downloads-image]][downloads-url]
 
 # e-prime
-
+npm module for detecting ['to be'](https://en.wikipedia.org/wiki/E-Prime) verbs.
 
 ## Install
 
@@ -16,6 +16,8 @@ npm install e-prime
 
 ```javascript
 var eprime = require('e-prime');
+var problems = eprime('NodeJs is awesome :)');
+// problems -> [{ index: 7, offset: 2 }]
 ```
 
 ## License
@@ -27,5 +29,5 @@ MIT
 [travis-url]: https://travis-ci.org/Vorror/e-prime
 [coveralls-image]: https://img.shields.io/coveralls/Vorror/e-prime.svg?style=flat-square
 [coveralls-url]: https://coveralls.io/r/Vorror/e-prime
-[downloads-image]: http://img.shields.io/npm/dm/coalesce-strategy.svg?style=flat-square
-[downloads-url]: https://npmjs.org/package/coalesce-strategy
+[downloads-image]: http://img.shields.io/npm/dm/e-prime.svg?style=flat-square
+[downloads-url]: https://npmjs.org/package/e-prime
