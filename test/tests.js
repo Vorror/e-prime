@@ -49,4 +49,13 @@ describe('e-prime', function () {
 
         done();
     });
+
+    it('Should detect \'isn’t(smart quote)', function (done) {
+        assert.deepEqual(eprime('That isn’t my droid.'), [{
+            index: 5,
+            offset: 5
+        }]);
+
+        done();
+    });
 });
