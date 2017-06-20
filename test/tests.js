@@ -58,4 +58,9 @@ describe('e-prime', function () {
 
         done();
     });
+
+    it('Fail gracefully', function (done) {
+        assert.deepEqual(eprime(), []);
+        done();
+    });
 });
