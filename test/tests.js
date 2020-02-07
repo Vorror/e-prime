@@ -24,6 +24,15 @@ describe('e-prime', function () {
         done();
     });
 
+    it('Should detect \'it\'s\'', function (done) {
+        assert.deepEqual(eprime('It\'s simple to use.'), [{
+            index: 0,
+            offset: 4
+        }]);
+
+        done();
+    });
+
     it('Should detect \'I\'m\'', function (done) {
         assert.deepEqual(eprime('I\'m not sure where to delivery the pizza'), [{
             index: 0,
