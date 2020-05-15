@@ -1,6 +1,6 @@
 {
   "name": "e-prime",
-  "version": "0.10.3",
+  "version": "0.10.4",
   "description": "detect various forms of 'to be' inside of sentences",
   "main": "e-prime.js",
   "scripts": {
